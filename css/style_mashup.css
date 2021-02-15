@@ -1,0 +1,34 @@
+.item1 { grid-area: header; color: white; font-weight: bold; font-size: 30px; padding: 15px 0; background-color: #FF0000;}
+.item2 { grid-area: mission; color: white; background-color: #000000;}
+.item3 { grid-area: maps; background-color: #000000;}
+.item4 { grid-area: youtube; background-color: #000000;}
+.item5 { grid-area: facebook; background-color: #000000;}
+.item6 { grid-area: footer; padding: 10px 0; font: 15px Arial, Helvetica, sans-serif; color: red;background-color: white;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'mission mission mission mission maps maps'
+    'youtube youtube youtube facebook facebook facebook'
+    'footer footer footer footer footer footer';
+  grid-gap: 1px;
+  background-color: #FF0000;
+  font-family: verdana;
+}
+.grid-container > div {
+  text-align: center;
+}
+p{
+	font-size: 18px;
+}
+h1{
+	font-weight: bold;
+	font-size: 30px;
+}
+.item1 > div
+{
+	padding: 15px 0; 
+	font-weight: bold;
+	background-color: #FF0000;
+}

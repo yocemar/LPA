@@ -1,0 +1,14 @@
+LOG - IP address: ::1 - 
+22/10/2020 12:48:35: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Anna',
+         'user',
+         'a'
+       )' at line 14
+--------------------------
+
+LOG - IP address: ::1 - 
+22/10/2020 12:50:02: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Anna',
+         'user',
+         'a'
+       )' at line 14
+--------------------------
+
