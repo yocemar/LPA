@@ -1,14 +1,57 @@
+
 LOG - IP address: ::1 - 
-22/10/2020 12:48:35: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Anna',
-         'user',
-         'a'
-       )' at line 14
+19/02/2021 16:30:27: User nueva fail to log in.
 --------------------------
 
 LOG - IP address: ::1 - 
-22/10/2020 12:50:02: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Anna',
-         'user',
-         'a'
-       )' at line 14
+19/02/2021 16:30:31: User nueva fail to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:30:51: User admin fail to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:31:03: User admin fail to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:31:16: User admin fail to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:31:28: User user fail to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:32:13: User user fail to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:32:24: User user fail to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:34:55: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:35:00: User nueva successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:35:13: User otra successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+19/02/2021 16:35:33: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+25/02/2021 13:16:39: User nueva successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+25/02/2021 13:28:58: User admin successfully logged in.
 --------------------------
 

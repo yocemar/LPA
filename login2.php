@@ -1,4 +1,4 @@
-<?PHP 
+<?PHP
   require('app-lib.php');
   isset($_POST['a'])? $action = $_POST['a'] : $action = "";
   $msg = null;
@@ -10,6 +10,8 @@
       $uPassword = $_POST['fldPassword'] : $uPassword = "";
 
     openDB();
+    $uPassword = base64_encode($uPassword);
+
     $query =
       "
       SELECT
@@ -31,8 +33,7 @@
       if($row['lpa_user_password'] == $uPassword) {
         $_SESSION['authUser'] = $row['lpa_user_ID'];
 		$_SESSION['isAdmin'] = (($row['lpa_user_group']=="administrator")?true:false);
-
-    lpa_log("User {$uName} successfully logged in.");
+        lpa_log("User {$uName} successfully logged in.");
         header("Location: index.php");
         exit;
       }

@@ -16,7 +16,6 @@
       </div>
     </div>
     <input type="hidden" name="a" value="search">
-
   </form>
 
 <?PHP
@@ -58,24 +57,24 @@
               </div>
             </div>
             <div class="prodAddToCart">
-              <button
-                type="button"
-                onclick="addToCart('<?PHP echo $prodID; ?>')">
+            <a href="cart.php?action=add&id=<?PHP echo $prodID; ?>">
                 Add To Cart
-              </button>
+              </a>
             </div>
           </div>
           <div style="clear: left"></div>
         </div>
       <?PHP } ?>
       </div>
-    <?PHP;
+    <?PHP
     } ?>
+
   <script>
     function loadURL(URL) {
       window.location = URL;
     }
   </script>
+
 
 <?PHP
   build_footer();
