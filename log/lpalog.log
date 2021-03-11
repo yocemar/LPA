@@ -107,3 +107,23 @@ LOG - IP address: ::1 -
 11/03/2021 18:03:33: User admin successfully logged in.
 --------------------------
 
+LOG - IP address: ::1 - 
+11/03/2021 18:12:04: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 18:12:31: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: 127.0.0.1 - 
+11/03/2021 18:33:37: User admin failed to log in.
+--------------------------
+
+LOG - IP address: 127.0.0.1 - 
+11/03/2021 18:33:51: User adim failed to log in.
+--------------------------
+
+LOG - IP address: 127.0.0.1 - 
+11/03/2021 18:33:59: User admin successfully logged in.
+--------------------------
+

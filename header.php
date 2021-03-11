@@ -17,10 +17,12 @@
 
 
 <body>
-  <div class="page-header" id="header">
-    <div style="margin-left: 10px">
-      Logic Peripherals Australia (LPA)
+  <header>
+    <div class="page-header" id="header">
+      <div style="margin-left: 10px">
+        Logic Peripherals Australia (LPA)
+      </div>
     </div>
-  </div>
-  <div style="float:right"><?php echo $displayName; ?></div>
-  <div style="clear: right"></div>
+    <div style="float:right"><?php echo $displayName; ?></div>
+    <div style="clear: right"></div>
+  </header>

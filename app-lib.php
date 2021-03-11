@@ -126,8 +126,7 @@ function build_navBlock() {
 		$isAdmin = "";
 	?>
 <div class="btn-group-vertical" id="navBlock">
-
-  <div class="btn btn-dark" class="navHeader">MAIN MENU</div>
+  <div class=" btn btn-dark" class="navHeader">MAIN MENU</div>
   <div class="btn btn-primary" class="navItem" onclick="navMan('index.php')">HOME</div>
   <div class="btn btn-primary" class="navItem" onclick="navMan('stock.php')">STOCK</div>
   <div class="btn btn-primary" class="navItem" onclick="navMan('sales.php')">SALES</div>
@@ -141,6 +140,7 @@ function build_navBlock() {
   <div class="btn btn-primary" class="navItem" onclick="navMan('users.php')">USERS</div>
   <?PHP } ?>
   <div class="btn btn-primary" class="navItem" onclick="navMan('login.php?killses=true')">Logout</div>
+
 </div>
 <?PHP
 }
