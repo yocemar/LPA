@@ -127,3 +127,19 @@ LOG - IP address: 127.0.0.1 -
 11/03/2021 18:33:59: User admin successfully logged in.
 --------------------------
 
+LOG - IP address: 127.0.0.1 - 
+11/03/2021 19:50:14: User user successfully logged in.
+--------------------------
+
+LOG - IP address: 127.0.0.1 - 
+11/03/2021 20:02:39: User adim failed to log in.
+--------------------------
+
+LOG - IP address: 127.0.0.1 - 
+11/03/2021 20:02:50: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 20:15:22: User admin successfully logged in.
+--------------------------
+

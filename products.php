@@ -19,7 +19,7 @@
   </form>
 
   <?PHP
-    if($action == "search") {
+    if(true/* $action == "search" */) {
       isset($_POST['txtSearch'])? $itmSearch = $_POST['txtSearch'] : $itmSearch = "";
       $itemNum = 1;
       openDB();
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="prodAddToCart">
-        <a href="cart.php?action=add&id=<?PHP echo $prodID; ?>">
+        <a class="btn btn-success" href="cart.php?action=add&id=<?PHP echo $prodID; ?>">
           Add To Cart
         </a>
       </div>

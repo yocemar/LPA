@@ -3,6 +3,7 @@
   build_header();
 ?>
 <?PHP build_navBlock(); ?>
+<br>
 <div id="content">
     <div class="sectionHeader">Cart</div>
 

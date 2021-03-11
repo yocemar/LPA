@@ -21,8 +21,8 @@
 		<div class="displayPane">
 			<div class="displayPaneCaption">Search:</div>
 			<div>
-				<input class="form-control" name="txtSearch" id="txtSearch" placeholder="Search invoices"
-					style="width: calc(100% - 115px)" value="<?PHP echo $txtSearch; ?>">
+				<input name="txtSearch" id="txtSearch" placeholder="Search invoices" style="width: calc(100% - 115px)"
+					value="<?PHP echo $txtSearch; ?>">
 				<button class="btn btn-primary" type="button" id="btnSearch">Search</button>
 				<?PHP
 						if($isAdmin) {
