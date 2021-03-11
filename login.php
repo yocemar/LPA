@@ -46,38 +46,37 @@
   }
  build_header();
 ?>
-  <div id="contentLogin">
-    <form name="frmLogin" id="frmLogin" method="post" action="login.php">
-      <div class="titleBar">User Login</div>
-      <div id="loginFrame">
-        <div class="msgTitle">Please supply your login details:</div>
-        <div>Username:</div>
-        <input type="text" name="fldUsername" id="fldUsername">
-        <div>Password:</div>
-        <input type="password" name="fldPassword" id="fldPassword">
-        <div class="buttonBar">
-          <button type="button" onclick="do_login()">Login</button>
-        </div>
+<div id="contentLogin">
+  <form name="frmLogin" id="frmLogin" method="post" action="login.php">
+    <div class="titleBar">User Login</div>
+    <div id="loginFrame">
+      <div class="msgTitle">Please supply your login details:</div>
+      <div>Username:</div>
+      <input type="text" name="fldUsername" id="fldUsername">
+      <div>Password:</div>
+      <input type="password" name="fldPassword" id="fldPassword">
+      <div class="buttonBar">
+        <button type="button" onclick="do_login()">Login</button>
       </div>
-      <input type="hidden" name="a" value="doLogin">
-    </form>
- </div>
+    </div>
+    <input type="hidden" name="a" value="doLogin">
+  </form>
+</div>
 <script>
   var msg = "<?PHP echo $msg; ?>";
-  if(msg) {
+  if (msg) {
     alert(msg);
   }
-  $( "#contentLogin").center().cs_draggable({
-      handle : ".titleBar",
-      containment : "window"
-    });
+  $("#contentLogin").center().cs_draggable({
+    handle: ".titleBar",
+    containment: "window"
+  });
 
-  $("#frmLogin").keypress(function(e) {
-    if(e.which == 13) {
+  $("#frmLogin").keypress(function (e) {
+    if (e.which == 13) {
       $(this).submit();
     }
   });
-
 </script>
 <?PHP
 build_footer();

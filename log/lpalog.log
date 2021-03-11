@@ -55,3 +55,55 @@ LOG - IP address: ::1 -
 25/02/2021 13:28:58: User admin successfully logged in.
 --------------------------
 
+LOG - IP address: ::1 - 
+11/03/2021 11:00:47: User nueva failed to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 11:01:44: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 15:15:37: User user failed to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 15:16:23: User user successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 15:47:25: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 15:48:41: User ad failed to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 15:49:25: User ad failed to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 15:49:28: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: 127.0.0.1 - 
+11/03/2021 16:12:17: User admin failed to log in.
+--------------------------
+
+LOG - IP address: 127.0.0.1 - 
+11/03/2021 16:12:24: User admin successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 16:30:22: User user12345 failed to log in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 16:30:28: User user successfully logged in.
+--------------------------
+
+LOG - IP address: ::1 - 
+11/03/2021 18:03:33: User admin successfully logged in.
+--------------------------
+

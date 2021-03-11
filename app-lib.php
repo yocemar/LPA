@@ -120,30 +120,28 @@ function build_header() {
 /**
  * Build the Navigation block
  */
-function build_navBlock() { 
+function build_navBlock() {
 	isset($_SESSION["isAdmin"])?
 		$isAdmin = $_SESSION["isAdmin"] :
 		$isAdmin = "";
 	?>
-    <div id="navBlock">
-      <div id="navHeader">MAIN MENU</div>
-      <div class="navItem" onclick="navMan('index.php')">HOME</div>
-      <div class="navItem" onclick="navMan('stock.php')">STOCK MANAGEMENT</div>
-      <div class="navItem" onclick="navMan('sales.php')">SALES MANAGEMENT</div>
-      <div class="navItem" onclick="navMan('cart.php')">CART</div>
-      <div class="navItem" onclick="navMan('client.php')">CLIENTS MANAGEMENT</div>
-      <div class="navItem" onclick="navMan('mashup.php')">MASHUP</div>
-      <div class="navItem" onclick="navMan('help.php')">HELP</div>
-	  <?PHP
+<div class="btn-group-vertical" id="navBlock">
+
+  <div class="btn btn-dark" class="navHeader">MAIN MENU</div>
+  <div class="btn btn-primary" class="navItem" onclick="navMan('index.php')">HOME</div>
+  <div class="btn btn-primary" class="navItem" onclick="navMan('stock.php')">STOCK</div>
+  <div class="btn btn-primary" class="navItem" onclick="navMan('sales.php')">SALES</div>
+  <div class="btn btn-primary" class="navItem" onclick="navMan('products.php')">PRODUCTS</div>
+  <div class="btn btn-primary" class="navItem" onclick="navMan('cart.php')">CART</div>
+  <div class="btn btn-primary" class="navItem" onclick="navMan('help.php')">HELP</div>
+  <?PHP
       if($isAdmin) {
 		?>
-		  <div class="menuSep"></div>
-		  <div class="navTitle">Administration</div>
-		  <div class="navItem" onclick="navMan('users.php')">USERS</div>
-		<?PHP } ?>
-      <div class="menuSep"></div>
-      <div class="navItem" onclick="navMan('login.php?killses=true')">Logout</div>
-    </div>
+  <div class="btn btn-dark" class="navHeader">Administration</div>
+  <div class="btn btn-primary" class="navItem" onclick="navMan('users.php')">USERS</div>
+  <?PHP } ?>
+  <div class="btn btn-primary" class="navItem" onclick="navMan('login.php?killses=true')">Logout</div>
+</div>
 <?PHP
 }
 

@@ -2,10 +2,22 @@
   require('app-lib.php');
   build_header();
 ?>
-  <?PHP build_navBlock(); ?>
-  <div id="content">
+<?PHP build_navBlock(); ?>
+<div id="content">
     <div class="sectionHeader">Cart</div>
-    <?php
+
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <?php
         if(isset($_GET['action']) && $_GET['action']=="add"){
             $id=intval($_GET['id']);
             if(isset($_SESSION['cart'][$id])){
@@ -32,9 +44,12 @@
             $_SESSION['cart'] = NULL;
         }
     ?>
-    <?php
+
+            <?php
 
     if(isset($_SESSION['cart'])){
+
+        
         openDB();
         $sql="SELECT * FROM lpa_stock WHERE lpa_stock_ID IN (";
 
@@ -48,35 +63,49 @@
         while($row = $query->fetch_assoc()){
 
         ?>
-            <p><?php echo $row['lpa_stock_name'] ?> x <?php echo $_SESSION['cart'][$row['lpa_stock_ID']]['quantity'] ?></p>
-        <?php
 
-        }
+            <tr>
+
+                <td> <?php echo $row['lpa_stock_name'] ?> </td>
+                <td> <?php echo $_SESSION['cart'][$row['lpa_stock_ID']]['quantity'] ?></td>
+            </tr>
+
+
+            <?php
+
+        } 
     ?>
-        <hr />
-        <ul>
-            <li><a href="products.php">Go to Products</a></li>
-            <li><a href="cart.php?action=clean">Clean Cart</a></li>
-            <li><a href="checkout.php">Checkout</a></li>
-        </ul>
+        <tbody>
+    </table>
+    <hr />
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <a href="products.php" class="btn btn-primary">Go to Products</a>
+        <a href="cart.php?action=clean" class="btn btn-danger">Clean Cart</a>
+        <a href="checkout.php" class="btn btn-success">Checkout</a>
+    </div>
 
 
     <?php
 
     }else{
 
-        echo "<p>Your Cart is empty. Please add some products.</p>";
-        ?> <br /><a href="products.php">Go to Products</a> <?PHP
+        
+        ?> <br>
+    <div class="alert alert-primary" role="alert">
+        <b> Your Cart is empty. Please add some products. </b>
+    </div>
+    <br /><a href=" products.php" class="btn btn-primary">Go to Products</a>
+    <?PHP
 
     }
 
 ?>
-  </div>
-  <script>
+</div>
+<script>
     function loadURL(URL) {
-      window.location = URL;
+        window.location = URL;
     }
-  </script>
+</script>
 
 <?PHP
   build_footer();
