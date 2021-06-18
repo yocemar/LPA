@@ -8,7 +8,7 @@
 <?PHP build_navBlock(); ?>
 <div id="content">
   This is the <b>
-    <?PHP echo basename($_SERVER['PHP_SELF']); ?></b> page.
+    <?PHP echo basename($_SERVER['PHP_SELF']); ?></b> page 1.
 </div>
 <script>
 </script>

@@ -140,9 +140,9 @@ CREATE TABLE IF NOT EXISTS `lpa_users` (
 --
 
 INSERT INTO `lpa_users` (`lpa_user_ID`, `lpa_user_username`, `lpa_user_password`, `lpa_user_firstname`, `lpa_user_lastname`, `lpa_user_group`, `lpa_user_status`) VALUES
-(1, 'admin', 'password', 'Juan Fernando', 'Osorio S', 'administrator', '1'),
-(2, 'user', '12345', 'Oscar Mauricio', 'Salazar Ospina', 'user', '1'),
-(3, 'codea', 'password', 'Steve', 'Coleman', 'administrator', '1');
+(1, 'admin', 'password', 'Yocemar ', 'Melo', 'administrator', '1'),
+(2, 'user', '12345', 'Juan', 'perez', 'user', '1'),
+(3, 'codea', 'password', 'Pablo', 'Gomez', 'administrator', '1');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
